@@ -9,32 +9,23 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
-      <div className="col-2">
-        <div className="card" style={{ width: "12rem" }}>
-          <img src={"/assets/images/TikTok.PNG"} />
-        </div>
-      </div>
-
-      <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
-        <div className="container text-center flex">
-          <div className="row align-items-start">
-
-            <div className="col-10">
-              <h1 className="m-0" style={{ fontSize: "2rem" }}>
-                Tik Tok Product Reviews
-              </h1>
-              <p
-                className="m-0"
-                style={{ fontSize: "1.75rem", fontWeight: "700" }}
-              >
-                Reviews That You Can Trust.
-              </p>
+    <header className="bg-info container flex-column justify-space-between-lg justify-center align-center text-center text-dark mb-4 py-3">
+      <div className="row justify-center">
+          <div className="col-2 align-right">
+            <div className="card display-flex align-center" style={{ width: "12rem" }}>
+              <img src={"/assets/images/TikTok.PNG"} className="rounded -0 justify-center" />
             </div>
           </div>
+          <h1 className="m-0" style={{ fontSize: "4rem" }}>
+            Tik Tok Product Reviews
+          </h1>
+          <p
+            className="m-0"
+            style={{ fontSize: "1.75rem", fontWeight: "700" }}
+          >
+            Reviews That You Can Trust.
+          </p>
         </div>
-      </div>
-
       <div class="container-fluid">
         <ul className="nav nav-tabs .current-menu-item a ">
           <li className="nav-item">
@@ -78,7 +69,8 @@ const Header = () => {
           </li>
         </ul>
       </div>
-    </header>
+
+    </header >
   );
 };
 
