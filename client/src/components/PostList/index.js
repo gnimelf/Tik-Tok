@@ -13,14 +13,17 @@ const PostList = ({
 
   return (
     <div>
+      <div class="container">
+      <div class="row-4">
+      <div class="col -12">
       {showTitle && <h3>{title}</h3>}
       {posts &&
         posts.map((post) => (
-          <div key={post._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+          <div key={post._id} className="card mb-3 background-color: $red-500">
+            <h4 className="card-header bg-$red text-light m-0">
               {showUsername ? (
                 <Link
-                  className="text-light"
+                  className="text-light text-center"
                   to={`/profiles/${post.username}`}
                 >
                   {post.username} <br />
@@ -36,19 +39,25 @@ const PostList = ({
                 </>
               )}
             </h4>
-            <div className="card-body bg-light p-2">
+            <div className="card-body bg-info p-2">
             <img className='product-image' src={post.image}>
             </img>
+            <div> Link to the Product:
               <a href={post.url}>  {post.title}</a>
+              </div>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
               to={`/posts/${post._id}`}
             >
-              Join the discussion on this thought.
+              Would You Like to Review this Product?
             </Link>
           </div>
+          
         ))}
+    </div>
+    </div>
+    </div>
     </div>
   );
 };

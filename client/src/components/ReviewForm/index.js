@@ -41,7 +41,7 @@ const ReviewForm = ({ postId }) => {
 
   return (
     <div>
-      <h4>What are your thoughts on this post?</h4>
+      <h4>What are your thoughts on this review?</h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -78,7 +78,7 @@ const ReviewForm = ({ postId }) => {
       ) : (
         <p>
           You need to be logged in to add your review. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          <Link to="/login">Login</Link> or <Link to="/signup">SignUp.</Link>
         </p>
       )}
     </div>
