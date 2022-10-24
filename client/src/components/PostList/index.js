@@ -37,7 +37,9 @@ const PostList = ({
               )}
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{post.title}</p>
+            <img className='product-image' src={post.image}>
+            </img>
+              <a href={post.url}>  {post.title}</a>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"

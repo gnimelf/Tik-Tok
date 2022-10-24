@@ -8,8 +8,8 @@ import { QUERY_POSTS, QUERY_ME } from "../../utils/queries";
 import Auth from "../../utils/auth";
 
 const PostForm = () => {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
+  const [postTitle, setTitle] = useState("");
+  const [postDescription, setDescription] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addPost, { error }] = useMutation(ADD_POST, {
@@ -40,13 +40,14 @@ const PostForm = () => {
     try {
       const { data } = await addPost({
         variables: {
-          title,
-          description,
+          title: postTitle,
+          description: postDescription,
           username: Auth.getProfile().data.username,
         },
       });
 
       setTitle("");
+      setDescription("");
     } catch (err) {
       console.error(err);
     }
@@ -55,11 +56,11 @@ const PostForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === "title" && value.length <= 280) {
-      setTitle(value);
-      setCharacterCount(value.length);
-    } else if (name === "description") {
+    if (name === "description" && value.length <= 280) {
       setDescription(value);
+      setCharacterCount(value.length);
+    } else if (name === "title") {
+      setTitle(value);
     }
   };
 
@@ -73,7 +74,7 @@ const PostForm = () => {
             <input
               name="title"
               placeholder="Here's a new title..."
-              value={title}
+              value={postTitle}
               className="form-input w-100"
               style={{ lineHeight: "1.5", resize: "vertical" }}
               onChange={handleChange}
@@ -94,7 +95,7 @@ const PostForm = () => {
               <textarea
                 name="description"
                 placeholder="Here's a new description..."
-                value={description}
+                value={postDescription}
                 className="form-input w-100"
                 style={{ lineHeight: "1.5", resize: "vertical" }}
                 onChange={handleChange}
