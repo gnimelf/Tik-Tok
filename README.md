@@ -37,11 +37,11 @@
 * This application has a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, etc.).
 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
+
+![alt text](assest/images/tiktokp3.png)
+    
 
 ## Credits
 <a href="https://github.com/gnimelf"><img src="https://avatars.githubusercontent.com/u/10476662?v=4" width=20% height=20%> Justin Fleming
