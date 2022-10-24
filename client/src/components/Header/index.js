@@ -15,9 +15,11 @@ const Header = () => {
         <div>
         
           <Link className="text-light" to="/">
-            <h1 className="m-0">Tik Tok Product Reviews</h1>
+          <h1 className="m-0" style={{ fontSize: "4rem" }}>
+                Tik Tok Product Reviews
+              </h1>
           </Link>
-          <p className="m-0">Reviews That You Can Trust.</p>
+          <p className="m-0" style={{ fontSize: "1.75rem", fontWeight: "700" }}>Reviews That You Can Trust.</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
