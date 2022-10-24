@@ -69,5 +69,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/gnimelf/project-3)
-![language](https://img.shields.io/github/languages/count/gnimelf/project-3)
+![badmath](https://img.shields.io/github/languages/top/gnimelf/Tik-Tok)
+![language](https://img.shields.io/github/languages/count/gnimelf/Tik-Tok)
