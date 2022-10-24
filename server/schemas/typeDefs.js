@@ -13,6 +13,8 @@ const typeDefs = gql`
     _id: ID
     title: String
     username: String
+    image: String
+    url: String
     description: String
     createdAt: String
     reviews: [Review]!
