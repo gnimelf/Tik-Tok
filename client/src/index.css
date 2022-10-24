@@ -750,6 +750,11 @@ a:hover {
   padding-top: 1.625rem !important;
 }
 
+
+.product-image {
+  width: 100px;
+}
+
 /* padding-right */
 .pr-0 {
   padding-right: 0 !important;

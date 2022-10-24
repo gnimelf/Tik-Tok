@@ -21,6 +21,8 @@ export const QUERY_POSTS = gql`
     posts {
       _id
       title
+      image
+      url
       username
       description
       createdAt
