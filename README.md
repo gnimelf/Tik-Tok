@@ -1,4 +1,4 @@
-# Tik-Tok
+
 # Tik Tok Made Me Buy It!
 
 ## Description
@@ -9,20 +9,9 @@
 
 ## Table of Contents
 
-
-
-- [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-
-## Installation
-
-- 
--
--
--
--
 
 
 ## Usage
