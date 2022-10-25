@@ -48,6 +48,7 @@ const PostForm = () => {
 
       setTitle("");
       setDescription("");
+      setCharacterCount(0);
     } catch (err) {
       console.error(err);
     }
